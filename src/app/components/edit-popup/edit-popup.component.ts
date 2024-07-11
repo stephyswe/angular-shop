@@ -6,6 +6,7 @@ import {
   FormBuilder,
   FormsModule,
   ReactiveFormsModule,
+  ValidatorFn,
   Validators,
 } from '@angular/forms';
 import { RatingModule } from 'primeng/rating';
@@ -42,8 +43,18 @@ export class EditPopupComponent {
 
   @Output() confirm = new EventEmitter<Product>();
 
+  specialCharacterValidator(): ValidatorFn {
+    return (control) => {
+      const hasSpecialCharacter = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/.test(
+        control.value
+      );
+
+      return hasSpecialCharacter ? { hasSpecialCharacter: true } : null;
+    };
+  }
+
   productForm = this.formBuilder.group({
-    name: ['', [Validators.required]],
+    name: ['', [Validators.required, this.specialCharacterValidator()]],
     image: [''],
     price: ['', [Validators.required]],
     rating: [0],

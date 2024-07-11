@@ -41,8 +41,10 @@
       icon="pi pi-check"
       (click)="onConfirm()"
       label="Confirm"
+      [class.disabled]="!productForm.valid"
     ></button>
     <button
+      class="p-button-secondary"
       type="button"
       pButton
       icon="pi pi-times"
