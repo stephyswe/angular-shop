@@ -76,3 +76,15 @@ http://localhost:4200/about-us
 ng g c modules/about-us/about-us-2 --standalone=false
 http://localhost:4200/about-us/about-us-2
 "after working, delete about-us-2"
+
+# header nav
+
+...
+
+# favicons
+
+https://favicon.io/favicon-generator/
+ng serve - website - inspect - application - icons tab
+
+# change to UI
+
