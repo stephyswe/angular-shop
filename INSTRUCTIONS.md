@@ -89,3 +89,7 @@ ng serve - website - inspect - application - icons tab
 # change to UI
 
 ...
+
+# pipes (reusable functions)
+
+ng g p pipes/truncate-name

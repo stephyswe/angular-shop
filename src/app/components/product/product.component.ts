@@ -1,4 +1,10 @@
-import { Component, EventEmitter, Input, Output, ViewChild } from '@angular/core';
+import {
+  Component,
+  EventEmitter,
+  Input,
+  Output,
+  ViewChild,
+} from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RatingModule } from 'primeng/rating';
 import { Product } from '../../../types';
@@ -6,15 +12,24 @@ import { ButtonModule } from 'primeng/button';
 import { ConfirmationService } from 'primeng/api';
 import { ConfirmPopupModule } from 'primeng/confirmpopup';
 import { ToastModule } from 'primeng/toast';
-
+import { PricePipe } from '../../pipes/price.pipe';
+import { TruncateNamePipe } from '../../pipes/truncate-name.pipe';
 
 @Component({
   selector: 'app-product',
   standalone: true,
-  imports: [RatingModule, FormsModule, ButtonModule, ConfirmPopupModule, ToastModule],
+  imports: [
+    RatingModule,
+    FormsModule,
+    ButtonModule,
+    ConfirmPopupModule,
+    ToastModule,
+    PricePipe,
+    TruncateNamePipe,
+  ],
   providers: [ConfirmationService],
   templateUrl: './product.component.html',
-  styleUrl: './product.component.scss'
+  styleUrl: './product.component.scss',
 })
 export class ProductComponent {
   constructor(private confirmationService: ConfirmationService) {}
