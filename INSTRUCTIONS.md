@@ -65,3 +65,14 @@ https://primeng.org/button
 
 ng g c components/edit-popup
 npm i primeicons --save
+
+# modules
+"one-time module import"
+
+ng g m modules/about-us --routing
+ng g c modules/about-us/about-us --standalone=false
+http://localhost:4200/about-us
+
+ng g c modules/about-us/about-us-2 --standalone=false
+http://localhost:4200/about-us/about-us-2
+"after working, delete about-us-2"
