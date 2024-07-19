@@ -1,7 +1,8 @@
-# Angular Storefront - Crash Course
+# Angular Storefront - Crash Course from TheCodeDeck
 
 This project is a simple storefront built with Angular, showcasing various Angular concepts including standalone apps, modules, services, components, and routing. In this tutorial, users will learn how to perform basic CRUD (Create, Read, Update, Delete) operations on products. Server provides the backend functionality for the Angular frontend, allowing users to perform CRUD (Create, Read, Update, Delete) operations on products. The server utilizes Express and interacts with a JSON file to manage product data.
 
+Github Orginal: https://github.com/thecodedeck/angular-cc-1-client.git
 Youtube video: https://www.youtube.com/watch?v=f7BJFTEbc10
 
 ## Table of Contents
@@ -59,9 +60,9 @@ Before you begin, ensure you have the following installed:
 Open your browser and navigate to http://localhost:4200/ to see the app in action.
 
 2. Run the server:
-  ```bash
-  npm start
-  ```
+   ```bash
+   npm start
+   ```
 The server will be running on http://localhost:3000/.
 The Angular frontend will interact with these API endpoints to perform CRUD operations on products.
 
