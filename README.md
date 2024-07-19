@@ -59,7 +59,7 @@ Before you begin, ensure you have the following installed:
 Open your browser and navigate to http://localhost:4200/ to see the app in action.
 
 2. Run the server:
-  ```
+  ```bash
   npm start
   ```
 The server will be running on http://localhost:3000/.
