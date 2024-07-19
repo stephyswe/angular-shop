@@ -43,11 +43,13 @@ Before you begin, ensure you have the following installed:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/thecodedeck/angular-cc-1-client.git
+   git clone https://github.com/stephyswe/angular-shop.git
    ```
 
 2. Install dependencies:
    ```bash
+   npm install
+   cd server
    npm install
    ```
 
@@ -61,6 +63,7 @@ Open your browser and navigate to http://localhost:4200/ to see the app in actio
 
 2. Run the server:
    ```bash
+   cd server
    npm start
    ```
 The server will be running on http://localhost:3000/.
